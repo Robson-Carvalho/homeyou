@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.header`
   display: flex;
@@ -39,13 +39,115 @@ export const Logo = styled.div`
   }
 `;
 
-export const MobileButton = styled.button``;
+export const MobileButton = styled.button`
+  display: none;
 
-export const Menu = styled.menu``;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 
-export const Interactions = styled.div`
-  img {
-    width: 20px;
-    height: 20px;
+    span {
+      display: block;
+      width: 28px;
+      border-top: 1px solid;
+      color: #272727;
+
+      ${({ menuIsVisible }) =>
+        menuIsVisible &&
+        css`
+          border-top-color: transparent;
+        `}
+    }
+
+    span::after {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 1px;
+
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+
+      ${({ menuIsVisible }) =>
+        menuIsVisible &&
+        css`
+          transform: rotate(-135deg);
+          top: -7px;
+        `}
+    }
+
+    span::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 1px;
+
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+
+      ${({ menuIsVisible }) =>
+        menuIsVisible &&
+        css`
+          transform: rotate(135deg);
+        `}
+    }
+  }
+`;
+
+export const Menu = styled.menu`
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+
+  li {
+    a {
+      text-decoration: none;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      /* identical to box height */
+
+      color: #272727;
+    }
+  }
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1000;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    width: 100%;
+    height: 0;
+    padding-top: 45px;
+    background-color: #f9f9f9;
+
+    overflow-y: hidden;
+    visibility: hidden;
+
+    transition: 0.3s ease-in;
+
+    ${({ menuIsVisible }) =>
+      menuIsVisible &&
+      css`
+        height: calc(100% - 100px);
+        visibility: visible;
+      `}
   }
 `;
