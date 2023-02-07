@@ -168,7 +168,7 @@ export const Menu = styled.menu`
     ${({ menuIsVisible }) =>
       menuIsVisible &&
       css`
-        height: calc(100% - 72px);
+        min-height: calc(100% - 72px);
         visibility: visible;
       `}
   }
