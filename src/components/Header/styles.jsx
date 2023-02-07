@@ -6,6 +6,10 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   padding: 24px;
+
+  @media (max-width: 900px) {
+    height: 72px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -27,6 +31,11 @@ export const Logo = styled.div`
     width: 40px;
     height: 40px;
     background: #272727;
+
+    @media (max-width: 900px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   h1 {
@@ -36,6 +45,10 @@ export const Logo = styled.div`
     font-size: 24px;
     line-height: 29px;
     color: #272727;
+
+    @media (max-width: 900px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -119,6 +132,15 @@ export const Menu = styled.menu`
       /* identical to box height */
 
       color: #272727;
+
+      @media (max-width: 900px) {
+        font-size: 16px;
+      }
+    }
+
+    img {
+      width: 21px;
+      height: 21px;
     }
   }
 
@@ -130,7 +152,7 @@ export const Menu = styled.menu`
     z-index: 1000;
 
     position: absolute;
-    top: 100px;
+    top: 72px;
     right: 0;
 
     width: 100%;
@@ -146,7 +168,7 @@ export const Menu = styled.menu`
     ${({ menuIsVisible }) =>
       menuIsVisible &&
       css`
-        height: calc(100% - 100px);
+        height: calc(100% - 72px);
         visibility: visible;
       `}
   }
