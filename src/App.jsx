@@ -5,6 +5,11 @@ import { reset } from "./styles/global.style";
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
+
+  html{
+    scroll-behavior: smooth;
+  }
+
   body {
     min-height: 100vh;
 
