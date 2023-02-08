@@ -125,6 +125,121 @@ export const InfoHome = styled.div`
   }
 `;
 
+export const Design = styled.section`
+  width: 100%;
+  padding: 129px 24px 132px 24px;
+  background-color: #fff;
+
+  @media (max-width: 1260px) {
+    padding: 40px 24px 42px 24px;
+  }
+`;
+
+export const ContentDesign = styled.div`
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    width: 487px;
+    height: 457px;
+    background-color: #272727;
+
+    img {
+      margin: 50px 0 0 50px;
+
+      width: 487px;
+      height: 457px;
+    }
+
+    @media (max-width: 1260px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1260px) {
+    justify-content: center;
+  }
+`;
+
+export const InfoDesign = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+
+  @media (max-width: 1260px) {
+    align-items: center;
+  }
+
+  div {
+    max-width: 585px;
+    width: 100%;
+    height: 182px;
+    padding: 20px 33px 30px 31px;
+
+    background: #272727;
+
+    @media (max-width: 900px) {
+      padding: 16px;
+    }
+
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 20px;
+      color: #fff;
+
+      @media (max-width: 900px) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 14px;
+      }
+    }
+
+    span {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 160%;
+      /* or 26px */
+
+      color: #fff;
+
+      @media (max-width: 900px) {
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  a {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #272727;
+
+    @media (max-width: 900px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+`;
+
 export const Gallery = styled.section``;
 
 export const Contact = styled.section``;
