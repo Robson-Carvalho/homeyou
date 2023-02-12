@@ -248,6 +248,10 @@ export const Gallery = styled.section`
   flex-direction: column;
   align-items: center;
 
+  @media screen and (max-width: 838px) {
+    padding: 40px 24px;
+  }
+
   h2 {
     font-family: "Montserrat";
     font-style: normal;
@@ -257,6 +261,12 @@ export const Gallery = styled.section`
     margin-bottom: 19px;
 
     color: #272727;
+
+    @media screen and (max-width: 838px) {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 
   span {
@@ -272,6 +282,12 @@ export const Gallery = styled.section`
     text-align: center;
 
     color: #797979;
+
+    @media screen and (max-width: 838px) {
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+    }
   }
 
   div {
@@ -284,8 +300,8 @@ export const Gallery = styled.section`
     gap: 20px;
 
     img {
-      width: 396px;
-      height: 550px;
+      max-width: 396px;
+      width: 100%;
     }
   }
 `;
@@ -295,6 +311,10 @@ export const Budget = styled.section`
   flex-direction: column;
   align-items: center;
   padding: 78px 24px;
+
+  @media screen and (max-width: 838px) {
+    padding: 40px 24px;
+  }
 
   h2 {
     font-family: "Montserrat";
@@ -306,6 +326,12 @@ export const Budget = styled.section`
 
     color: #272727;
     margin-bottom: 17px;
+
+    @media screen and (max-width: 838px) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 24px;
+    }
   }
 
   span {
@@ -319,6 +345,13 @@ export const Budget = styled.section`
     text-align: center;
 
     color: #797979;
+
+    @media screen and (max-width: 838px) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+    }
   }
 
   a {
@@ -336,7 +369,111 @@ export const Budget = styled.section`
     padding: 12px 32px;
     background: #ffffff;
     border: 1px solid #272727;
+
+    @media screen and (max-width: 838px) {
+      margin-top: 40px;
+      padding: 8px 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 `;
 
-export const Contact = styled.section``;
+export const Footer = styled.footer`
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 90px 24px;
+
+  @media screen and (max-width: 838px) {
+    padding: 40px 24px;
+  }
+
+  div {
+    max-width: 1230px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 69px;
+
+    @media screen and (max-width: 838px) {
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      background: #272727;
+
+      @media screen and (max-width: 838px) {
+        display: none;
+      }
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      gap: 117px;
+
+      @media screen and (max-width: 838px) {
+        justify-content: space-between;
+        gap: 32px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        @media screen and (max-width: 838px) {
+          gap: 3px;
+        }
+
+        h3 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          /* identical to box height */
+
+          text-align: center;
+
+          color: #272727;
+          margin-bottom: 5px;
+
+          @media screen and (max-width: 838px) {
+            margin-bottom: 3px;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+
+        li {
+          a {
+            text-decoration: none;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            color: #272727;
+
+            @media screen and (max-width: 838px) {
+              font-size: 12px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+`;
