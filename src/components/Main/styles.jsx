@@ -290,4 +290,53 @@ export const Gallery = styled.section`
   }
 `;
 
+export const Budget = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 78px 24px;
+
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    color: #272727;
+    margin-bottom: 17px;
+  }
+
+  span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #797979;
+  }
+
+  a {
+    margin-top: 48px;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #272727;
+
+    padding: 12px 32px;
+    background: #ffffff;
+    border: 1px solid #272727;
+  }
+`;
+
 export const Contact = styled.section``;

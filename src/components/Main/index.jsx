@@ -7,6 +7,7 @@ import {
   ContentDesign,
   InfoDesign,
   Gallery,
+  Budget,
   Contact,
 } from "./styles";
 
@@ -71,6 +72,13 @@ export const Main = () => {
           <img src={imgGallery3} alt="" />
         </div>
       </Gallery>
+      <Budget>
+        <h2>Orçamento</h2>
+        <span>
+          Interessado em entrar em contato com um de nossos profissionais?
+        </span>
+        <a href="#">Entre em contato</a>
+      </Budget>
     </Container>
   );
 };
