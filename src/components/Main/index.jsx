@@ -23,7 +23,7 @@ import imgGallery3 from "../../assets/img5.png";
 export const Main = () => {
   return (
     <Container>
-      <Home>
+      <Home id="home">
         <ContentHome>
           <InfoHome>
             <h2>
@@ -62,7 +62,7 @@ export const Main = () => {
           </InfoDesign>
         </ContentDesign>
       </Design>
-      <Gallery>
+      <Gallery id="gallery">
         <h2>Galeria</h2>
         <span>
           Se você está entediado com a aparência da decoração de interiores da
@@ -74,7 +74,7 @@ export const Main = () => {
           <img src={imgGallery3} alt="" />
         </div>
       </Gallery>
-      <Budget>
+      <Budget id="contact">
         <h2>Orçamento</h2>
         <span>
           Interessado em entrar em contato com um de nossos profissionais?

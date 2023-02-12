@@ -65,6 +65,7 @@ export const MobileButton = styled.button`
     cursor: pointer;
 
     span {
+      z-index: 1000 !important;
       display: block;
       width: 28px;
       border-top: 1px solid;
@@ -73,6 +74,8 @@ export const MobileButton = styled.button`
       ${({ menuIsVisible }) =>
         menuIsVisible &&
         css`
+          margin-right: 20px;
+          position: fixed;
           border-top-color: transparent;
         `}
     }
@@ -151,13 +154,13 @@ export const Menu = styled.menu`
     justify-content: flex-start;
     z-index: 1000;
 
-    position: absolute;
-    top: 72px;
+    position: fixed;
+    top: 0;
     right: 0;
 
     width: 100%;
     height: 0;
-    padding-top: 45px;
+    padding-top: 137px;
     background-color: #f9f9f9;
 
     overflow-y: hidden;
@@ -168,7 +171,7 @@ export const Menu = styled.menu`
     ${({ menuIsVisible }) =>
       menuIsVisible &&
       css`
-        height: calc(100% - 72px);
+        height: 100%;
         visibility: visible;
       `}
   }
