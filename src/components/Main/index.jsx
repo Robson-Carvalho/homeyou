@@ -13,6 +13,10 @@ import {
 import imgHome from "../../assets/img1.png";
 import imgDesign from "../../assets/img2.png";
 
+import imgGallery1 from "../../assets/img3.png";
+import imgGallery2 from "../../assets/img4.png";
+import imgGallery3 from "../../assets/img5.png";
+
 export const Main = () => {
   return (
     <Container>
@@ -55,6 +59,18 @@ export const Main = () => {
           </InfoDesign>
         </ContentDesign>
       </Design>
+      <Gallery>
+        <h2>Galeria</h2>
+        <span>
+          Se você está entediado com a aparência da decoração de interiores da
+          casa comuns, trabalhamos com designs diferentes e inovadores.
+        </span>
+        <div>
+          <img src={imgGallery1} alt="" />
+          <img src={imgGallery2} alt="" />
+          <img src={imgGallery3} alt="" />
+        </div>
+      </Gallery>
     </Container>
   );
 };

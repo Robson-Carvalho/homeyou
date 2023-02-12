@@ -240,6 +240,54 @@ export const InfoDesign = styled.div`
   }
 `;
 
-export const Gallery = styled.section``;
+export const Gallery = styled.section`
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 55px 24px 47px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 19px;
+
+    color: #272727;
+  }
+
+  span {
+    max-width: 771px;
+    width: 100%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+
+    text-align: center;
+
+    color: #797979;
+  }
+
+  div {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    img {
+      width: 396px;
+      height: 550px;
+    }
+  }
+`;
 
 export const Contact = styled.section``;
