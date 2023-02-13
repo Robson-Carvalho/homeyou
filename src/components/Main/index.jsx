@@ -8,10 +8,7 @@ import {
   InfoDesign,
   Gallery,
   Budget,
-  Footer,
 } from "./styles";
-
-import logoHomeYou from "../../assets/home.svg";
 
 import imgHome from "../../assets/img1.png";
 import imgDesign from "../../assets/img2.png";
@@ -81,51 +78,6 @@ export const Main = () => {
         </span>
         <a href="#">Entre em contato</a>
       </Budget>
-      <Footer>
-        <div>
-          <img src={logoHomeYou} alt="" />
-
-          <div>
-            <ul>
-              <h3>Produtos</h3>
-              <li>
-                <a href="">Mobilia</a>
-              </li>
-              <li>
-                <a href="">Segurança</a>
-              </li>
-              <li>
-                <a href="">Design Interior </a>
-              </li>
-            </ul>
-
-            <ul>
-              <h3>Mais Informações</h3>
-              <li>
-                <a href="">Contrato</a>
-              </li>
-              <li>
-                <a href="">Sobre nós</a>
-              </li>
-              <li>
-                <a href="">Termos e Condições</a>
-              </li>
-            </ul>
-            <ul>
-              <h3>Redes Sociais </h3>
-              <li>
-                <a href="">Pinterest</a>
-              </li>
-              <li>
-                <a href="">Facebook</a>
-              </li>
-              <li>
-                <a href="">Instagram </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </Footer>
     </Container>
   );
 };
