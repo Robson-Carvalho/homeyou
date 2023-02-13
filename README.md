@@ -1,7 +1,7 @@
 <h1 align="center">Home You</h1>
 
 <p align="center">
-  <a href="https://tech-blog-fawn-xi.vercel.app/">
+  <a href="https://homeyou-six.vercel.app/">
     <img src="http://img.shields.io/static/v1?laabel=STATUS&message=In%20Production&color=272727&style=for-the-badge"/>
   </a>
 </p>
