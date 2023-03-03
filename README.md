@@ -20,7 +20,7 @@ You can view the project layout through [THIS LINK](https://www.figma.com/file/Y
 ## Running project
 
 <p align="center">
-  <img src="https://github.com/Robson-Carvalho/homeyou/blob/main/src/images/preview-home-you.gif" />
+  <img src="https://github.com/Robson-Carvalho/homeyou/blob/main/.github/preview-home-you.gif?raw=true" />
 </p>
 
 ## Prerequisites
